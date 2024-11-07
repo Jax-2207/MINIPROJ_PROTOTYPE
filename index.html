@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#sales">Monthly Sales</a></li>
+                <li><a href="#categories">Category Sales</a></li>
+                <li><a href="#charts">Charts</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+
+<header>
+    <h1>KPI Dashboard</h1>
+    <p>Real-time data visualization for informed decision-making</p>
+</header>
+
+<div id="overview" class="dashboard-container">
+    <h2>Overview</h2>
+    <div class="kpi-overview">
+        <div class="kpi-box" id="totalRevenueBox">
+            <h3>Total Revenue</h3>
+            <input type="number" id="totalRevenueInput" value="500000" />
+        </div>
+        <div class="kpi-box" id="netProfitBox">
+            <h3>Net Profit</h3>
+            <input type="number" id="netProfitInput" value="150000" />
+        </div>
+        <div class="kpi-box" id="customerRetentionBox">
+            <h3>Customer Retention</h3>
+            <input type="number" id="customerRetentionInput" value="85" />
+        </div>
+        <div class="kpi-box" id="salesGrowthBox">
+            <h3>Sales Growth</h3>
+            <input type="number" id="salesGrowthInput" value="20" />
+        </div>
+        <div class="kpi-box" id="customerSatisfactionBox">
+            <h3>Customer Satisfaction</h3>
+            <input type="number" id="customerSatisfactionInput" value="90" />
+        </div>
+        <div class="kpi-box" id="npsBox">
+            <h3>Net Promoter Score</h3>
+            <input type="number" id="npsInput" value="75" />
+        </div>
+    </div>
+</div>
+
+<div id="sales" class="monthly-sales-section">
+    <h2>Monthly Sales</h2>
+    <div class="sales-box">
+        <input type="number" id="janInput" placeholder="Jan" value="100000" />
+        <input type="number" id="febInput" placeholder="Feb" value="120000" />
+        <input type="number" id="marInput" placeholder="Mar" value="110000" />
+        <input type="number" id="aprInput" placeholder="Apr" value="140000" />
+        <input type="number" id="mayInput" placeholder="May" value="130000" />
+        <input type="number" id="junInput" placeholder="Jun" value="160000" />
+        <input type="number" id="julInput" placeholder="Jul" value="150000" />
+    </div>
+</div>
+
+<div id="categories" class="category-sales-section">
+    <h2>Category Sales</h2>
+    <div class="sales-box">
+        <input type="number" id="categoryAInput" placeholder="Category A" value="500000" />
+        <input type="number" id="categoryBInput" placeholder="Category B" value="300000" />
+        <input type="number" id="categoryCInput" placeholder="Category C" value="400000" />
+        <input type="number" id="categoryDInput" placeholder="Category D" value="200000" />
+    </div>
+</div>
+
+<div id="charts" class="charts-section">
+    <h2>Charts</h2>
+    <div class="chart-container">
+        <h4>Sales Trend</h4>
+        <canvas id="salesTrend"></canvas>
+    </div>
+    <div class="chart-container">
+        <h4>Category Sales</h4>
+        <canvas id="categorySalesPie"></canvas>
+    </div>
+</div>
+
+<footer id="footer">
+    <p>&copy; Created by Group A-13.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
